@@ -5,5 +5,6 @@ The system manage subscribers, grouped into region with regional administration 
 - http://www.wmo.int/pages/prog/www/DPS/GDPFS-humanitarian.html
 - http://www.wmo.int/pages/prog/www/DPS/gdps-2.html#RSMCs
 - http://www.wmo-sat.info/product-access-guide/
-- https://www.wmo.int/pages/prog/www/DPFSERA/EmergencyResp.html https://worldweather.wmo.int/gmas/pdf/JOINTHEWMOlivefeedofalerts.pdf 
+- https://www.wmo.int/pages/prog/www/DPFSERA/EmergencyResp.html 
+- https://worldweather.wmo.int/gmas/pdf/JOINTHEWMOlivefeedofalerts.pdf 
 - https://www.wmo.int/pages/prog/drr/index_en.html
