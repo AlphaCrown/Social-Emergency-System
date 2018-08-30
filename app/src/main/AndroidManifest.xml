@@ -18,7 +18,7 @@
         android:theme="@style/AppTheme">
         <activity
             android:name=".activities.MainActivity"
-            android:label="@string/title_activity_main3"
+            android:label="Home"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -44,7 +44,33 @@
             android:name="com.google.android.geo.API_KEY"
             android:value="@string/google_maps_key" />
 
-        <uses-library android:name="org.apache.http.legacy" android:required="false"/>
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+
+        <activity
+            android:name=".activities.ThriftActivity"
+            android:label="Thrift"
+            android:parentActivityName=".activities.MainActivity" />
+        <activity
+            android:name=".activities.WalletActivity"
+            android:label="Wallet"
+            android:parentActivityName=".activities.MainActivity" />
+        <activity android:name=".activities.LoanActivity"
+            android:label="Loans"
+            android:parentActivityName=".activities.MainActivity" />
+        <activity android:name=".activities.StoreActivity"
+            android:label="Store"
+            android:parentActivityName=".activities.MainActivity" />
+        <activity android:name=".activities.BillActivity"
+            android:label="Bills"
+            android:parentActivityName=".activities.MainActivity" />
+        <activity android:name=".activities.CoperativeActivity"
+            android:label="Coperatives"
+            android:parentActivityName=".activities.MainActivity" />
+        <activity android:name=".activities.SupportActivity"
+            android:label="Support"
+            android:parentActivityName=".activities.MainActivity" />
     </application>
 
 </manifest>

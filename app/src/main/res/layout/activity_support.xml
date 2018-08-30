@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.SupportActivity">
+
+    <LinearLayout
+        android:paddingTop="40dp"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <LinearLayout
+            android:paddingVertical="30dp"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:paddingHorizontal="10dp"
+                android:id="@+id/relative_create"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageButton
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:id="@+id/imageButton_support_sendmail"
+                    android:scaleType="fitCenter"
+                    android:background="#fc5f09"
+                    android:src="@drawable/ic_mail_outline_black_24dp"/>
+                <TextView
+                    android:id="@+id/textView_support_sendmail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/imageButton_support_sendmail"
+                    android:paddingLeft="15dp"
+                    android:singleLine="true"
+                    android:text="Send Mail"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:paddingHorizontal="10dp"
+                android:id="@+id/relative_support_contact"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageButton
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:id="@+id/imageButton_support_contact"
+                    android:scaleType="fitCenter"
+                    android:background="#3701fe"
+                    android:src="@drawable/ic_contact_phone_black_24dp"/>
+                <TextView
+                    android:id="@+id/textView_support_contact"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/imageButton_support_contact"
+                    android:paddingLeft="10dp"
+                    android:singleLine="true"
+                    android:text="Contact Us"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:paddingHorizontal="10dp"
+                android:id="@+id/relative_support_fag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageButton
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:id="@+id/imageButton_support_saq"
+                    android:scaleType="fitCenter"
+                    android:background="#c79a5f"
+                    android:src="@drawable/ic_help_black_24dp"/>
+                <TextView
+                    android:id="@+id/textView_support_saq"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/imageButton_support_saq"
+                    android:singleLine="true"
+                    android:paddingLeft="30dp"
+                    android:text="FAQ's"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

@@ -26,4 +26,13 @@
         android:src="@drawable/ic_menu_manage"
         app:layout_anchor="@id/map"
         app:layout_anchorGravity="bottom|right|end" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="100dp"
+        android:id="@+id/tileType"/>
 </android.support.design.widget.CoordinatorLayout>

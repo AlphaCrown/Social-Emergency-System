@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.WalletActivity">
+
+    <LinearLayout
+        android:paddingTop="40dp"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <LinearLayout
+            android:paddingVertical="30dp"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:paddingHorizontal="10dp"
+                android:id="@+id/relative_create"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageButton
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:id="@+id/imageButton_wallet_add"
+                    android:scaleType="fitCenter"
+                    android:background="#fc5f09"
+                    android:src="@drawable/ic_create_new_folder_black_24dp"/>
+                <TextView
+                    android:id="@+id/textView_wallet_add"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/imageButton_wallet_add"
+                    android:paddingLeft="0dp"
+                    android:singleLine="true"
+                    android:text="Add Payment"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:paddingHorizontal="10dp"
+                android:id="@+id/relative_wallet_edit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageButton
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:id="@+id/imageButton_wallet_edit"
+                    android:scaleType="fitCenter"
+                    android:background="#3701fe"
+                    android:src="@drawable/ic_edit_black_24dp"/>
+                <TextView
+                    android:id="@+id/textView_wallet_edit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/imageButton_wallet_edit"
+                    android:paddingLeft="30dp"
+                    android:singleLine="true"
+                    android:text="Edit"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:paddingHorizontal="10dp"
+                android:id="@+id/relative_wallet_fund"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageButton
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:id="@+id/imageButton_wallet_fund"
+                    android:scaleType="fitCenter"
+                    android:background="#c79a5f"
+                    android:src="@drawable/ic_credit_card_black_24dp"/>
+                <TextView
+                    android:id="@+id/textView_wallet_fund"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/imageButton_wallet_fund"
+                    android:singleLine="true"
+                    android:paddingLeft="30dp"
+                    android:text="Fund"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

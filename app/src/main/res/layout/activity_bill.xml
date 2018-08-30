@@ -5,9 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context=".activities.MainActivity"
-    tools:showIn="@layout/app_bar_main">
+    tools:context=".activities.BillActivity">
 
     <LinearLayout
         android:paddingTop="40dp"
@@ -24,61 +22,60 @@
 
             <RelativeLayout
                 android:paddingHorizontal="10dp"
-                android:id="@+id/relative_wallet"
+                android:id="@+id/relative_bills_tv"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content">
                 <ImageButton
                     android:layout_width="100dp"
                     android:layout_height="100dp"
-                    android:id="@+id/imageButton_wallet"
+                    android:id="@+id/imageButton_bills_tv"
                     android:scaleType="fitCenter"
                     android:background="#fc5f09"
-                    android:src="@drawable/ic_account_balance_wallet_white_24dp"/>
+                    android:src="@drawable/ic_tv_black_24dp"/>
                 <TextView
-                    android:id="@+id/textView_wallet"
+                    android:id="@+id/textView_bills_tv"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_below="@id/imageButton_wallet"
-                    android:paddingLeft="30dp"
+                    android:layout_below="@id/imageButton_bills_tv"
+                    android:paddingLeft="40dp"
                     android:singleLine="true"
-                    android:text="Wallet"
+                    android:text="TV"
                     android:textSize="18sp"
                     android:textStyle="bold" />
             </RelativeLayout>
 
             <RelativeLayout
                 android:paddingHorizontal="10dp"
-                android:id="@+id/relative_thrift"
+                android:id="@+id/relative_bills_phcn"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content">
                 <ImageButton
                     android:layout_width="100dp"
                     android:layout_height="100dp"
-                    android:id="@+id/imageButton_thrift"
+                    android:id="@+id/imageButton_bills_phcn"
                     android:scaleType="fitCenter"
                     android:background="#3701fe"
-                    android:src="@drawable/ic_domain_black_24dp"/>
+                    android:src="@drawable/ic_flash_on_black_24dp"/>
                 <TextView
-                    android:id="@+id/textView_thrift"
+                    android:id="@+id/textView_bill_phcn"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_below="@id/imageButton_thrift"
+                    android:layout_below="@id/imageButton_bills_phcn"
                     android:paddingLeft="30dp"
                     android:singleLine="true"
-                    android:text="Thrift"
+                    android:text="PHCN"
                     android:textSize="18sp"
                     android:textStyle="bold" />
             </RelativeLayout>
 
             <RelativeLayout
                 android:paddingHorizontal="10dp"
-                android:id="@+id/relative_loans"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content">
                 <ImageButton
                     android:layout_width="100dp"
                     android:layout_height="100dp"
-                    android:id="@+id/imageButton_loans"
+                    android:id="@+id/imageButton_bills_tax"
                     android:scaleType="fitCenter"
                     android:background="#c79a5f"
                     android:src="@drawable/ic_monochrome_photos_black_24dp"/>
@@ -86,10 +83,10 @@
                     android:id="@+id/textView_loans"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_below="@id/imageButton_loans"
-                    android:paddingLeft="30dp"
+                    android:layout_below="@id/imageButton_bills_tax"
+                    android:paddingLeft="40dp"
                     android:singleLine="true"
-                    android:text="Loans"
+                    android:text="Tax"
                     android:textSize="18sp"
                     android:textStyle="bold" />
             </RelativeLayout>
@@ -104,103 +101,46 @@
 
             <RelativeLayout
                 android:paddingHorizontal="10dp"
-                android:id="@+id/relative_store"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content">
                 <ImageButton
                     android:layout_width="100dp"
                     android:layout_height="100dp"
-                    android:id="@+id/imageButton_store"
+                    android:id="@+id/imageButton_bills_lawma"
                     android:scaleType="fitCenter"
                     android:background="#fc5f09"
-                    android:src="@drawable/ic_store_black_24dp"/>
+                    android:src="@drawable/ic_delete_sweep_black_24dp"/>
                 <TextView
                     android:id="@+id/textView_store"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_below="@id/imageButton_store"
-                    android:paddingLeft="30dp"
+                    android:layout_below="@id/imageButton_bills_lawma"
+                    android:paddingLeft="20dp"
                     android:singleLine="true"
-                    android:text="Store"
+                    android:text="LAWMA"
                     android:textSize="18sp"
                     android:textStyle="bold" />
             </RelativeLayout>
 
             <RelativeLayout
                 android:paddingHorizontal="10dp"
-                android:id="@+id/relative_bills"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content">
                 <ImageButton
                     android:layout_width="100dp"
                     android:layout_height="100dp"
-                    android:id="@+id/imageButton_bills"
+                    android:id="@+id/imageButton_bills_phonedata"
                     android:scaleType="fitCenter"
                     android:background="#3701fe"
-                    android:src="@drawable/ic_attach_money_black_24dp"/>
+                    android:src="@drawable/ic_phone_in_talk_black_24dp"/>
                 <TextView
                     android:id="@+id/textView_bills"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_below="@id/imageButton_bills"
-                    android:paddingLeft="30dp"
+                    android:layout_below="@id/imageButton_bills_phonedata"
+                    android:paddingLeft="10dp"
                     android:singleLine="true"
-                    android:text="Bills"
-                    android:textSize="18sp"
-                    android:textStyle="bold" />
-            </RelativeLayout>
-
-            <RelativeLayout
-                android:paddingHorizontal="10dp"
-                android:id="@+id/relative_coperatives"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
-                <ImageButton
-                    android:layout_width="100dp"
-                    android:layout_height="100dp"
-                    android:id="@+id/imageButton_coperatives"
-                    android:scaleType="fitCenter"
-                    android:background="#c79a5f"
-                    android:src="@drawable/ic_account_balance_black_24dp"/>
-                <TextView
-                    android:id="@+id/textView_wallet4"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@id/imageButton_coperatives"
-                    android:paddingLeft="0dp"
-                    android:singleLine="true"
-                    android:text="Coperatives"
-                    android:textSize="18sp"
-                    android:textStyle="bold" />
-            </RelativeLayout>
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_gravity="center"
-            android:orientation="horizontal"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
-
-            <RelativeLayout
-                android:paddingHorizontal="10dp"
-                android:id="@+id/relative_support"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
-                <ImageButton
-                    android:layout_width="100dp"
-                    android:layout_height="100dp"
-                    android:id="@+id/imageButton_support"
-                    android:scaleType="fitCenter"
-                    android:background="#fc5f09"
-                    android:src="@drawable/ic_headset_mic_black_24dp"/>
-                <TextView
-                    android:id="@+id/textView_support"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@id/imageButton_support"
-                    android:paddingLeft="30dp"
-                    android:singleLine="true"
-                    android:text="Support"
+                    android:text="Phone Data"
                     android:textSize="18sp"
                     android:textStyle="bold" />
             </RelativeLayout>

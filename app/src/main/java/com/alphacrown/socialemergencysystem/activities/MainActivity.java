@@ -50,19 +50,73 @@ public class MainActivity extends AppCompatActivity
         imgBtnHome.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent walletIntent = new Intent(v.getContext(), MenuActivity.class);
+                Intent walletIntent = new Intent(v.getContext(), WalletActivity.class);
                 startActivity(walletIntent);
             }
         });
-        // Maps image button
-        ImageButton imgBtnMaps = findViewById(R.id.imageButton_maps);
-        imgBtnMaps.setOnClickListener(new View.OnClickListener() {
+        // Thrift button click
+        ImageButton imgBtnThrift = findViewById(R.id.imageButton_thrift);
+        imgBtnThrift.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {
-                Intent mapsIntent = new Intent(v.getContext(), MapsActivity.class);
-                startActivity(mapsIntent);
+            public void onClick(View view) {
+                Intent thriftIntent = new Intent(view.getContext(), ThriftActivity.class);
+                startActivity(thriftIntent);
             }
         });
+        // Loan button click
+        ImageButton imgBtnLoan = findViewById(R.id.imageButton_loans);
+        imgBtnLoan.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent loanIntent = new Intent(view.getContext(), LoanActivity.class);
+                startActivity(loanIntent);
+            }
+        });
+        // Store button click
+        ImageButton imgBtnStore = findViewById(R.id.imageButton_store);
+        imgBtnStore.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent storeIntent = new Intent(view.getContext(), StoreActivity.class);
+                startActivity(storeIntent);
+            }
+        });
+        // Bills button click
+        ImageButton imgBtnBills = findViewById(R.id.imageButton_bills);
+        imgBtnBills.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent billsIntent = new Intent(view.getContext(), BillActivity.class);
+                startActivity(billsIntent);
+            }
+        });
+        // Coperatives button click
+        ImageButton imgBtnCoperatives = findViewById(R.id.imageButton_coperatives);
+        imgBtnCoperatives.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent coperativesIntent = new Intent(view.getContext(), CoperativeActivity.class);
+                startActivity(coperativesIntent);
+            }
+        });
+        // Support button click
+        ImageButton imgBtnSupport = findViewById(R.id.imageButton_support);
+        imgBtnSupport.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent supportIntent = new Intent(view.getContext(), SupportActivity.class);
+                startActivity(supportIntent);
+            }
+        });
+        // Maps image button
+//        ImageButton imgBtnMaps = findViewById(R.id.imageButton_coperatives);
+//        imgBtnMaps.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                Intent mapsIntent = new Intent(v.getContext(), MapsActivity.class);
+//                startActivity(mapsIntent);
+//            }
+//        });
     }
 
     @Override
