@@ -109,14 +109,14 @@ public class MainActivity extends AppCompatActivity
             }
         });
         // Maps image button
-//        ImageButton imgBtnMaps = findViewById(R.id.imageButton_coperatives);
-//        imgBtnMaps.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                Intent mapsIntent = new Intent(v.getContext(), MapsActivity.class);
-//                startActivity(mapsIntent);
-//            }
-//        });
+        ImageButton imgBtnMaps = findViewById(R.id.imageButton_maps);
+        imgBtnMaps.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent mapsIntent = new Intent(v.getContext(), MapsActivity.class);
+                startActivity(mapsIntent);
+            }
+        });
     }
 
     @Override

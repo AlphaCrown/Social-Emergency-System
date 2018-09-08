@@ -176,7 +176,8 @@
         </LinearLayout>
 
         <LinearLayout
-            android:layout_gravity="center"
+            android:layout_marginStart="14dp"
+            android:paddingStart="13dp"
             android:orientation="horizontal"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content">
@@ -201,6 +202,30 @@
                     android:paddingLeft="30dp"
                     android:singleLine="true"
                     android:text="Support"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:paddingHorizontal="10dp"
+                android:id="@+id/relative_maps"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageButton
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:id="@+id/imageButton_maps"
+                    android:scaleType="fitCenter"
+                    android:background="#3701fe"
+                    android:src="@drawable/ic_map_black_24dp"/>
+                <TextView
+                    android:id="@+id/textView_maps"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/imageButton_maps"
+                    android:paddingLeft="30dp"
+                    android:singleLine="true"
+                    android:text="Maps"
                     android:textSize="18sp"
                     android:textStyle="bold" />
             </RelativeLayout>
